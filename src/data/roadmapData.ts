@@ -6,7 +6,7 @@ export const roadmapSteps: RoadmapStep[] = [
     timeline: 'Day 1 – 3',
     title: 'Discovery & Strategic Brief',
     subtitle: 'A 20-minute calibrated consultation',
-    description: 'We map out your lifestyle, commute patterns, spatial requirements, budget elasticity, and investment horizon. No vague sales talk—only structured criteria.',
+    description: 'We map out your lifestyle, commute patterns, spatial requirements, budget elasticity, and investment horizon. No vague sales talk-only structured criteria.',
     keyDeliverable: 'Personalized Homebuyer Brief & Curation Framework',
     deliverableBadge: 'Tailored Match Profile',
     iconName: 'Compass',

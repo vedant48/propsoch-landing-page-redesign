@@ -18,7 +18,7 @@ export const faqs: FaqItem[] = [
     id: 'faq-3',
     category: 'fees',
     question: 'How does Propsoch make money? Do you charge buyers a fee?',
-    answer: 'Our Guided Home Buying consultation and site visits are completely free for buyers. When you purchase a RERA-approved primary home, developers pay standard marketing referral fees—however, our internal advisors are 100% salaried architects with zero sales commissions. They have zero incentive to push one builder over another, ensuring 100% unbiased recommendations.',
+    answer: 'Our Guided Home Buying consultation and site visits are completely free for buyers. When you purchase a RERA-approved primary home, developers pay standard marketing referral fees-however, our internal advisors are 100% salaried architects with zero sales commissions. They have zero incentive to push one builder over another, ensuring 100% unbiased recommendations.',
     highlight: 'Zero commission conflict',
   },
   {

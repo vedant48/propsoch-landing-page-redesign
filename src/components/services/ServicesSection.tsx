@@ -17,7 +17,7 @@ const services = [
     icon: FileText,
     title: 'Peace of Mind Report',
     description:
-      "India's most comprehensive property analysis — 80+ critical data points covering floorplans, vastu, legal title & liveability.",
+      "India's most comprehensive property analysis - 80+ critical data points covering floorplans, vastu, legal title & liveability.",
     badge: null,
     href: '#brochure-vs-reality',
   },
@@ -49,7 +49,7 @@ const services = [
     icon: Map,
     title: 'Area Intelligence',
     description:
-      'Hyperlocal infrastructure reports — connectivity, upcoming metro lines, school zones & appreciation potential.',
+      'Hyperlocal infrastructure reports - connectivity, upcoming metro lines, school zones & appreciation potential.',
     badge: null,
     href: '#',
   },
@@ -68,7 +68,7 @@ export default function ServicesSection() {
             <span className="text-primary">Nothing you don&apos;t.</span>
           </h2>
           <p className="mt-3 text-body-lg text-text-subtle leading-relaxed max-w-xl">
-            Independent, architect-led services built entirely around you — not the builder.
+            Independent, architect-led services built entirely around you - not the builder.
           </p>
         </div>
 

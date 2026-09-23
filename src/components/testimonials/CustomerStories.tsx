@@ -161,7 +161,7 @@ export default function CustomerStories() {
                 Real stories from people who&apos;ve been there, bought that.
               </h2>
               <p className="mt-2.5 text-body-lg text-text-muted font-normal leading-relaxed">
-                From complex market comparisons to finding verified, zero-compromise homes — our advisory helps buyers make confident decisions with 100% peace of mind.
+                From complex market comparisons to finding verified, zero-compromise homes - our advisory helps buyers make confident decisions with 100% peace of mind.
               </p>
             </div>
 

@@ -210,7 +210,7 @@ export default function TrustAuthoritySection() {
           <div className="border-t border-border-main mt-8 pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
             <div className="flex items-center gap-2 text-body-sm font-medium text-text-muted">
               <CheckCircle2 className="w-4 h-4 text-success shrink-0" />
-              <span>Zero commissions from developers — 100% consumer-aligned real estate representation.</span>
+              <span>Zero commissions from developers - 100% consumer-aligned real estate representation.</span>
             </div>
             <span className="text-body-sm text-text-subtle text-left sm:text-right shrink-0">
               Updated Q2 2024 Audit Data

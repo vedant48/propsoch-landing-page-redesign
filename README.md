@@ -1,4 +1,4 @@
-# Propsoch — Landing Page Redesign
+# Propsoch - Landing Page Redesign
 
 > A responsive redesign of the Propsoch landing page focused on clearer messaging, stronger visual hierarchy, improved interactions, accessibility, and performance.
 
@@ -40,7 +40,7 @@ The redesign focuses on:
 
 ---
 
-# Part 1 — Analysis
+# Part 1 - Analysis
 
 ## 1. Original Lighthouse Audit
 
@@ -88,7 +88,7 @@ The accessibility audit also identified issues including insufficient color cont
 
 # 2. UX/UI Issues Identified
 
-## Issue 1 — Hero: Unclear Value Proposition
+## Issue 1 - Hero: Unclear Value Proposition
 
 ### Problem
 
@@ -133,19 +133,19 @@ This moves the communication from **problem-first** to **value-first**.
 
 ![Current hero desktop](./public/analysis/issue-1-current-desktop.png)
 
-*Caption: Current Propsoch hero on desktop — problem-focused messaging and unclear primary action.*
+*Caption: Current Propsoch hero on desktop - problem-focused messaging and unclear primary action.*
 
 ![Current hero mobile](./public/analysis/issue-1-current-mobile.png)
 
-*Caption: Current Propsoch hero on mobile — headline wrapping increases the amount of information users must process.*
+*Caption: Current Propsoch hero on mobile - headline wrapping increases the amount of information users must process.*
 
 ![Redesigned hero](./public/analysis/issue-1-solution.png)
 
-*Caption: Redesigned hero — direct value proposition, supporting explanation, clear CTA and trust indicators.*
+*Caption: Redesigned hero - direct value proposition, supporting explanation, clear CTA and trust indicators.*
 
 ---
 
-## Issue 2 — Comparison Section: High Information Density
+## Issue 2 - Comparison Section: High Information Density
 
 ### Problem
 
@@ -185,23 +185,23 @@ This makes the section easier to scan on desktop and allows the information to t
 
 ![Current comparison desktop](./public/analysis/issue-2-current-desktop.png)
 
-*Caption: Current comparison section on desktop — multiple comparison rows compete for attention.*
+*Caption: Current comparison section on desktop - multiple comparison rows compete for attention.*
 
 ![Current comparison mobile](./public/analysis/issue-2-current-mobile.png)
 
-*Caption: Current comparison section on mobile — dense comparison content requires extended vertical scanning.*
+*Caption: Current comparison section on mobile - dense comparison content requires extended vertical scanning.*
 
 ![Redesigned comparison](./public/analysis/issue-2-solution.png)
 
-*Caption: Redesigned comparison — stronger hierarchy and grouped information make the difference easier to scan.*
+*Caption: Redesigned comparison - stronger hierarchy and grouped information make the difference easier to scan.*
 
 ---
 
-## Issue 3 — Customer Stories: Video Dominates the Viewport
+## Issue 3 - Customer Stories: Video Dominates the Viewport
 
 ### Problem
 
-The original Customer Stories section is heavily video-led. The video presentation can occupy most of the available viewport while the customer's context — such as who they are, where they are from, and their experience — is not always visible at the same time.
+The original Customer Stories section is heavily video-led. The video presentation can occupy most of the available viewport while the customer's context - such as who they are, where they are from, and their experience - is not always visible at the same time.
 
 The original presentation also starts the video experience without requiring an explicit user action.
 
@@ -233,29 +233,29 @@ This keeps the context and the media connected instead of making the user discov
 
 ![Current customer stories desktop](./public/analysis/issue-3-current-desktop.png)
 
-*Caption: Current Customer Stories section on desktop — video-led presentation dominates the available viewport.*
+*Caption: Current Customer Stories section on desktop - video-led presentation dominates the available viewport.*
 
 ![Current customer stories mobile](./public/analysis/issue-3-current-mobile.png)
 
-*Caption: Current Customer Stories section on mobile — limited viewport height makes the speaker context easier to push below the fold.*
+*Caption: Current Customer Stories section on mobile - limited viewport height makes the speaker context easier to push below the fold.*
 
 ![Redesigned customer stories](./public/analysis/issue-3-solution.png)
 
-*Caption: Redesigned Customer Stories — poster-first media with customer context and story navigation kept together.*
+*Caption: Redesigned Customer Stories - poster-first media with customer context and story navigation kept together.*
 
 ---
 
-## Issue 4 — 25-Day Journey: Long, Dense Timeline
+## Issue 4 - 25-Day Journey: Long, Dense Timeline
 
 ### Problem
 
 The original **25-day home-buying journey** contains several stages:
 
 - Today
-- Week 1 — Discovery / Longlist
-- Week 2 — Site Visits
-- Week 3 — Deep Dive
-- Last Week — Negotiation / Closure
+- Week 1 - Discovery / Longlist
+- Week 2 - Site Visits
+- Week 3 - Deep Dive
+- Last Week - Negotiation / Closure
 
 The content is useful, but the timeline creates a long vertical sequence of information.
 
@@ -286,10 +286,10 @@ This creates a focused interaction:
 The five stages are also made visually clearer:
 
 1. **Start**
-2. **Week 1 — Discovery & shortlisting**
-3. **Week 2 — Site visits**
-4. **Week 3 — Deep dive**
-5. **Last week — Negotiation & closure**
+2. **Week 1 - Discovery & shortlisting**
+3. **Week 2 - Site visits**
+4. **Week 3 - Deep dive**
+5. **Last week - Negotiation & closure**
 
 This preserves the original 25-day proposition while reducing the need to navigate two separate areas.
 
@@ -297,19 +297,19 @@ This preserves the original 25-day proposition while reducing the need to naviga
 
 ![Current 25-day journey](./public/analysis/issue-4-current.png)
 
-*Caption: Current 25-day journey — the right-side timeline requires additional scrolling to reveal later weeks.*
+*Caption: Current 25-day journey - the right-side timeline requires additional scrolling to reveal later weeks.*
 
 ![Redesigned 25-day journey](./public/analysis/issue-4-solution.png)
 
-*Caption: Redesigned 25-day journey — the left context remains fixed while the right timeline scrolls through all journey stages.*
+*Caption: Redesigned 25-day journey - the left context remains fixed while the right timeline scrolls through all journey stages.*
 
 ![Redesigned 25-day journey mobile](./public/analysis/issue-4-solution-mobile.png)
 
-*Caption: Redesigned 25-day journey on mobile — the journey is converted into a responsive sequence while preserving the stage hierarchy.*
+*Caption: Redesigned 25-day journey on mobile - the journey is converted into a responsive sequence while preserving the stage hierarchy.*
 
 ---
 
-## Issue 5 — Inconsistent Visual Hierarchy and Typography
+## Issue 5 - Inconsistent Visual Hierarchy and Typography
 
 ### Problem
 
@@ -346,15 +346,15 @@ The redesign establishes a consistent typographic system:
 
 ![Current typography](./public/analysis/issue-5-current.png)
 
-*Caption: Current homepage typography — heading and supporting-text hierarchy varies between sections.*
+*Caption: Current homepage typography - heading and supporting-text hierarchy varies between sections.*
 
 ![Redesigned typography](./public/analysis/issue-5-solution.png)
 
-*Caption: Redesigned typography — consistent type hierarchy creates a more unified visual system.*
+*Caption: Redesigned typography - consistent type hierarchy creates a more unified visual system.*
 
 ---
 
-## Issue 6 — Inconsistent Spacing and Section Rhythm
+## Issue 6 - Inconsistent Spacing and Section Rhythm
 
 ### Problem
 
@@ -389,15 +389,15 @@ This creates a predictable vertical rhythm across the page.
 
 ![Current spacing](./public/analysis/issue-6-current.png)
 
-*Caption: Current homepage spacing — section density and vertical gaps vary across the page.*
+*Caption: Current homepage spacing - section density and vertical gaps vary across the page.*
 
 ![Redesigned spacing](./public/analysis/issue-6-solution.png)
 
-*Caption: Redesigned spacing — standardized section padding and content gaps create a consistent page rhythm.*
+*Caption: Redesigned spacing - standardized section padding and content gaps create a consistent page rhythm.*
 
 ---
 
-# Part 2 — Build
+# Part 2 - Build
 
 ## Assignment Scope
 
@@ -516,11 +516,11 @@ The desktop interaction is converted into a responsive sequence so the journey r
 
 ![25-day journey desktop](./public/analysis/25-day-journey-desktop.png)
 
-*Caption: Redesigned 25-day journey on desktop — fixed context with a progressive scrollable timeline.*
+*Caption: Redesigned 25-day journey on desktop - fixed context with a progressive scrollable timeline.*
 
 ![25-day journey mobile](./public/analysis/25-day-journey-mobile.png)
 
-*Caption: Redesigned 25-day journey on mobile — responsive sequential presentation of all stages.*
+*Caption: Redesigned 25-day journey on mobile - responsive sequential presentation of all stages.*
 
 ---
 
@@ -544,7 +544,7 @@ The Customer Stories section was redesigned around context-first interaction.
 
 ![Customer Stories desktop](./public/analysis/customer-stories-desktop.png)
 
-*Caption: Redesigned Customer Stories on desktop — customer context and media are presented together.*
+*Caption: Redesigned Customer Stories on desktop - customer context and media are presented together.*
 
 ![Customer Stories mobile](./public/analysis/customer-stories-mobile.png)
 
@@ -576,11 +576,11 @@ The page was designed for both desktop and mobile rather than treating mobile as
 
 ![Responsive desktop overview](./public/analysis/redesign-desktop.png)
 
-*Caption: Redesigned landing page — desktop responsive layout.*
+*Caption: Redesigned landing page - desktop responsive layout.*
 
 ![Responsive mobile overview](./public/analysis/redesign-mobile.png)
 
-*Caption: Redesigned landing page — mobile responsive layout.*
+*Caption: Redesigned landing page - mobile responsive layout.*
 
 ---
 
@@ -600,7 +600,7 @@ The goal was to preserve the visual quality of the landing page without treating
 
 ---
 
-# Part 3 — Final Lighthouse Comparison
+# Part 3 - Final Lighthouse Comparison
 
 After implementing the redesign, Lighthouse was run again against the deployed redesign.
 
@@ -616,17 +616,17 @@ https://propsoch-landing-page-redesign.vercel.app/
 | **Best Practices** | 100 | **96** | -4 | 100 | **96** | -4 |
 | **SEO** | 92 | **100** | **+8** | 83 | **100** | **+17** |
 
-### Mobile — Redesigned Page
+### Mobile - Redesigned Page
 
 ![Redesign Lighthouse Mobile](./public/audit/lighthouse-redesign-mobile.png)
 
-*Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile — Performance 68, Accessibility 95, Best Practices 96 and SEO 100.*
+*Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile - Performance 68, Accessibility 95, Best Practices 96 and SEO 100.*
 
-### Desktop — Redesigned Page
+### Desktop - Redesigned Page
 
 ![Redesign Lighthouse Desktop](./public/audit/lighthouse-redesign-desktop.png)
 
-*Caption: Lighthouse audit of the redesigned Propsoch homepage on desktop — Performance 97, Accessibility 95, Best Practices 96 and SEO 100.*
+*Caption: Lighthouse audit of the redesigned Propsoch homepage on desktop - Performance 97, Accessibility 95, Best Practices 96 and SEO 100.*
 
 ### Results
 
@@ -728,3 +728,13 @@ The redesign does not attempt to replace the information architecture of Propsoc
 The main design goal was to reduce cognitive load while maintaining the depth of information expected from a home-buying advisory product.
 
 The implementation goes beyond the minimum two additional sections by extending the redesign across the broader landing page, while keeping the required Hero, Services and 25-Day Guided Home Buying sections clearly identifiable for evaluation.
+
+# AI-Assisted Development
+
+AI tools were used selectively for UX/UI analysis, design exploration,
+implementation assistance, debugging, Lighthouse analysis and documentation.
+
+Relevant prompts and selected project-related conversation history are
+provided below.
+
+- [AI Prompts and Chat-history](./ai.md)

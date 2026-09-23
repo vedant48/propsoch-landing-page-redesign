@@ -30,7 +30,7 @@ export default function MarketOverview() {
             <div>
               <h3 className="text-eyebrow uppercase text-primary font-bold tracking-[0.12em] mb-2">Introduction to Propsoch</h3>
               <p>
-                Propsoch is an intelligent homebuyer&apos;s concierge and their true friend. Propsoch is designed to eliminate stress and bring transparency to your homebuying journey. Whether you&apos;re exploring an apartment for sale in Bangalore or checking the Mumbai real estate prices before a big decision, we offer personalized property recommendations, verified insights, and end-to-end guidance. Discover handpicked flats for sale in Mumbai, affordable apartments in Bangalore, or luxury homes in top neighborhoods — all tailored for you.
+                Propsoch is an intelligent homebuyer&apos;s concierge and their true friend. Propsoch is designed to eliminate stress and bring transparency to your homebuying journey. Whether you&apos;re exploring an apartment for sale in Bangalore or checking the Mumbai real estate prices before a big decision, we offer personalized property recommendations, verified insights, and end-to-end guidance. Discover handpicked flats for sale in Mumbai, affordable apartments in Bangalore, or luxury homes in top neighborhoods - all tailored for you.
               </p>
             </div>
 
