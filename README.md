@@ -19,8 +19,8 @@ A Lighthouse navigation audit was performed on the current Propsoch website:
 | **Best Practices** | **100 / 100** | **100 / 100** |
 | **SEO** | **92 / 100** | **83 / 100** |
 
-![Lighthouse audit Mobile](<1FF34591-D5F1-4157-AB26-971E8691E66D>.png)
-![Lighthouse audit Desktop](<C8CD18FF-7D9C-46FC-9317-0AB2C05F1369>.png)
+![Lighthouse audit Mobile](./public/audit/lighthouse-audit-mobile.png)
+![Lighthouse audit Desktop](./public/audit/lighthouse-audit-desktop.png)
 
 The audit was performed against the production homepage.
 
