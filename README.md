@@ -437,7 +437,7 @@ I also extended the redesign to other existing sections to maintain a consistent
 
 ---
 
-# 3. Redesigned Hero
+# 1. Redesigned Hero
 
 ### Original approach
 
@@ -461,9 +461,17 @@ Key changes:
 - Responsive desktop/mobile layout
 - Reduced cognitive load
 
+![Hero desktop](./public/analysis/hero-desktop.png)
+
+*Caption: Redesigned Hero section on desktop.*
+
+![Hero mobile](./public/analysis/hero-mobile.png)
+
+*Caption: Redesigned Hero section on mobile.*
+
 ---
 
-# 4. Services Section
+# 2. Services Section
 
 The Services section organizes the existing Propsoch offerings into a more structured and scannable presentation.
 
@@ -492,7 +500,7 @@ On mobile, the layout adapts to a single-column/stacked presentation so each ser
 
 ---
 
-# 5. 25-Day Guided Home Buying
+# 3. 25-Day Guided Home Buying
 
 The original 25-day journey was redesigned as an interaction rather than simply restyling the existing timeline.
 
@@ -506,17 +514,17 @@ This allows the user to keep the main context visible while exploring the full p
 
 The desktop interaction is converted into a responsive sequence so the journey remains readable and usable on a narrow viewport.
 
-![25-day journey desktop](./public/analysis/issue-4-solution.png)
+![25-day journey desktop](./public/analysis/25-day-journey-desktop.png)
 
 *Caption: Redesigned 25-day journey on desktop — fixed context with a progressive scrollable timeline.*
 
-![25-day journey mobile](./public/analysis/issue-4-solution-mobile.png)
+![25-day journey mobile](./public/analysis/25-day-journey-mobile.png)
 
 *Caption: Redesigned 25-day journey on mobile — responsive sequential presentation of all stages.*
 
 ---
 
-# 6. Customer Stories
+# 4. Customer Stories
 
 The Customer Stories section was redesigned around context-first interaction.
 
@@ -534,11 +542,11 @@ The Customer Stories section was redesigned around context-first interaction.
 - Story selector makes other stories discoverable
 - Desktop and mobile layouts are structured independently
 
-![Customer Stories desktop](./public/analysis/issue-3-solution.png)
+![Customer Stories desktop](./public/analysis/customer-stories-desktop.png)
 
 *Caption: Redesigned Customer Stories on desktop — customer context and media are presented together.*
 
-![Customer Stories mobile](./public/analysis/issue-3-current-mobile.png)
+![Customer Stories mobile](./public/analysis/customer-stories-mobile.png)
 
 *Caption: Customer Stories responsive presentation on mobile.*
 
