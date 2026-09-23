@@ -12,12 +12,15 @@ A Lighthouse navigation audit was performed on the current Propsoch website:
 **Audit type:** Navigation  
 **URL audited:** https://www.propsoch.com/
 
-| Category | Score |
-|---|---:|
-| **Performance** | **46 / 100** |
-| **Accessibility** | **84 / 100** |
-| **Best Practices** | **100 / 100** |
-| **SEO** | **92 / 100** |
+| Category | Score - Mobile | Score - Desktop |
+|---|---:|---:|
+| **Performance** | **41 / 100** | **91 / 100** |
+| **Accessibility** | **84 / 100** | **80 / 100** |
+| **Best Practices** | **100 / 100** | **100 / 100** |
+| **SEO** | **92 / 100** | **83 / 100** |
+
+![Lighthouse audit Mobile](<1FF34591-D5F1-4157-AB26-971E8691E66D>.png)
+![Lighthouse audit Desktop](<C8CD18FF-7D9C-46FC-9317-0AB2C05F1369>.png)
 
 The audit was performed against the production homepage.
 
