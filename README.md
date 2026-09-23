@@ -1,41 +1,78 @@
-# Propsoch Landing Page — Part 1 Analysis
+# Propsoch — Landing Page Redesign
 
-## 1. Current Lighthouse Scores
+> A responsive redesign of the Propsoch landing page focused on clearer messaging, stronger visual hierarchy, improved interactions, accessibility, and performance.
 
-A Lighthouse navigation audit was performed on the current Propsoch website.
+## Live Demo
 
-**Website:** https://www.propsoch.com/
+**Redesigned website:**  
+https://propsoch-landing-page-redesign.vercel.app/
 
-**Audit date:** 22 September 2026
+**GitHub:**  
+https://github.com/vedant48/propsoch-landing-page-redesign
 
-**Lighthouse version:** 13.4.1
+---
 
+# Overview
+
+The original Propsoch homepage contains a large amount of useful information, but several sections can be improved from a UX, visual hierarchy, responsive-design, accessibility, and performance perspective.
+
+For this redesign, I first audited the existing production homepage using Lighthouse and reviewed the desktop and mobile experience. I then redesigned the hero and multiple existing sections while maintaining the core information architecture and purpose of the original page.
+
+The redesign focuses on:
+
+- Clearer value proposition
+- Stronger visual hierarchy
+- Consistent typography and spacing
+- Better desktop/mobile behavior
+- Reduced interaction friction
+- More intentional video interaction
+- Improved accessibility
+- Responsive and optimized imagery
+- Performance-conscious implementation
+
+---
+
+# Tech Stack
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+
+---
+
+# Part 1 — Analysis
+
+## 1. Original Lighthouse Audit
+
+A Lighthouse navigation audit was performed on the current Propsoch production homepage.
+
+**Website:** https://www.propsoch.com/  
+**Audit date:** 22 September 2026  
+**Lighthouse version:** 13.4.1  
 **Audit type:** Navigation
 
-**URL audited:** https://www.propsoch.com/
+### Original Lighthouse Scores
 
-| Category | Score - Mobile | Score - Desktop |
+| Category | Mobile | Desktop |
 |---|---:|---:|
 | **Performance** | **41 / 100** | **91 / 100** |
 | **Accessibility** | **84 / 100** | **80 / 100** |
 | **Best Practices** | **100 / 100** | **100 / 100** |
 | **SEO** | **92 / 100** | **83 / 100** |
 
-![Lighthouse audit Mobile](./public/audit/lighthouse-audit-mobile.png)
+![Original Lighthouse Mobile](./public/audit/lighthouse-audit-mobile.png)
 
-*Caption: Lighthouse audit of the current Propsoch production homepage on mobile.*
+*Caption: Lighthouse audit of the original Propsoch production homepage on mobile.*
 
-![Lighthouse audit Desktop](./public/audit/lighthouse-audit-desktop.png)
+![Original Lighthouse Desktop](./public/audit/lighthouse-audit-desktop.png)
 
-*Caption: Lighthouse audit of the current Propsoch production homepage on desktop.*
-
-The audit was performed against the production homepage.
+*Caption: Lighthouse audit of the original Propsoch production homepage on desktop.*
 
 ### Key Lighthouse observations
 
-The most significant performance issue is **Largest Contentful Paint (LCP)** at **5.9 seconds**, while First Contentful Paint is **1.6 seconds**.
+The most significant performance issue was **Largest Contentful Paint (LCP) at 5.9 seconds**, while First Contentful Paint was **1.6 seconds**.
 
-Other notable performance findings include:
+Other notable findings:
 
 - **Speed Index:** 5.3 s
 - **Time to Interactive:** 16.0 s
@@ -45,25 +82,25 @@ Other notable performance findings include:
 - **Render-blocking resources:** approximately 290 ms estimated savings
 - **Legacy JavaScript:** approximately 60 KiB estimated savings
 
-The accessibility audit also identifies issues including insufficient color contrast, buttons without accessible names, invalid ARIA attribute values, and invalid list structure.
+The accessibility audit also identified issues including insufficient color contrast, buttons without accessible names, invalid ARIA attribute values, and invalid list structure.
 
 ---
 
-# 2. UX/UI Issues and Redesign Improvements
+# 2. UX/UI Issues Identified
 
 ## Issue 1 — Hero: Unclear Value Proposition
 
 ### Problem
 
-The current homepage opens with:
+The original homepage opens with:
 
 > “Blindly trusting a broker's Sales Pitch? Fake Claims? Sales Pitch? Fake Claims? Half Info?”
 
 The messaging focuses heavily on the problems with traditional property buying before clearly explaining what Propsoch does. The primary CTA, **“Propsoch Kar”**, is also brand-specific and requires the user to understand what action it represents.
 
-On desktop, the hero has enough space for the message, but the fragmented headline still creates multiple competing ideas.
+On desktop, the fragmented headline creates multiple competing ideas.
 
-On mobile, the headline wraps into more lines, increasing the amount of text users need to process before reaching the CTA.
+On mobile, the headline wraps into more lines, increasing the amount of information users need to process before reaching the CTA.
 
 ### Impact
 
@@ -84,7 +121,7 @@ The redesign changes the hero to a direct value proposition:
 It is supported by:
 
 - **“INDEPENDENT. UNBIASED. ON YOUR SIDE.”**
-- Supporting explanation of the service
+- Supporting service explanation
 - Clear city selection
 - **“Book a free call”** CTA
 - Trust indicators such as **1000+ families guided**
@@ -94,15 +131,15 @@ This moves the communication from **problem-first** to **value-first**.
 
 ### Images
 
-![Issue 1 — Current hero desktop](./public/analysis/issue-1-current-desktop.png)
+![Current hero desktop](./public/analysis/issue-1-current-desktop.png)
 
 *Caption: Current Propsoch hero on desktop — problem-focused messaging and unclear primary action.*
 
-![Issue 1 — Current hero mobile](./public/analysis/issue-1-current-mobile.png)
+![Current hero mobile](./public/analysis/issue-1-current-mobile.png)
 
 *Caption: Current Propsoch hero on mobile — headline wrapping increases the amount of information users must process.*
 
-![Issue 1 — Redesigned hero](./public/analysis/issue-1-solution.png)
+![Redesigned hero](./public/analysis/issue-1-solution.png)
 
 *Caption: Redesigned hero — direct value proposition, supporting explanation, clear CTA and trust indicators.*
 
@@ -124,7 +161,7 @@ The original **“How are we different?”** section presents a large comparison
 - In-Depth Reports
 - Advisor
 
-On desktop, the table can be read horizontally, but it presents many rows and competing pieces of information at once.
+On desktop, the table presents many rows and competing pieces of information at once.
 
 On mobile, the same information requires more vertical scanning and scrolling, making it harder to understand the core differentiation quickly.
 
@@ -132,29 +169,29 @@ On mobile, the same information requires more vertical scanning and scrolling, m
 
 The user needs to read through the comparison before understanding the main product difference.
 
-The section therefore communicates a lot of information, but the hierarchy between the **main message**, **supporting evidence**, and **individual comparison points** is weak.
+The hierarchy between the **main message**, **supporting evidence**, and **individual comparison points** is weak.
 
 ### Solution
 
-The redesign reframes the section around a clearer statement:
+The redesign reframes the section around:
 
 > **“Same home search. A completely different experience.”**
 
-Instead of presenting the comparison as one large dense table, the redesign uses stronger visual grouping and separates the Propsoch experience from the traditional broker experience.
+The comparison is reorganized into stronger visual groups, separating the Propsoch experience from the traditional broker experience.
 
 This makes the section easier to scan on desktop and allows the information to translate into a more natural vertical flow on mobile.
 
 ### Images
 
-![Issue 2 — Current comparison desktop](./public/analysis/issue-2-current-desktop.png)
+![Current comparison desktop](./public/analysis/issue-2-current-desktop.png)
 
 *Caption: Current comparison section on desktop — multiple comparison rows compete for attention.*
 
-![Issue 2 — Current comparison mobile](./public/analysis/issue-2-current-mobile.png)
+![Current comparison mobile](./public/analysis/issue-2-current-mobile.png)
 
 *Caption: Current comparison section on mobile — dense comparison content requires extended vertical scanning.*
 
-![Issue 2 — Redesigned comparison](./public/analysis/issue-2-solution.png)
+![Redesigned comparison](./public/analysis/issue-2-solution.png)
 
 *Caption: Redesigned comparison — stronger hierarchy and grouped information make the difference easier to scan.*
 
@@ -168,7 +205,7 @@ The original Customer Stories section is heavily video-led. The video presentati
 
 The original presentation also starts the video experience without requiring an explicit user action.
 
-On mobile, the available viewport is significantly smaller, so the video can push the speaker information further below the fold.
+On mobile, the smaller viewport can push speaker information further below the fold.
 
 ### Impact
 
@@ -194,15 +231,15 @@ This keeps the context and the media connected instead of making the user discov
 
 ### Images
 
-![Issue 3 — Current customer stories desktop](./public/analysis/issue-3-current-desktop.png)
+![Current customer stories desktop](./public/analysis/issue-3-current-desktop.png)
 
 *Caption: Current Customer Stories section on desktop — video-led presentation dominates the available viewport.*
 
-![Issue 3 — Current customer stories mobile](./public/analysis/issue-3-current-mobile.png)
+![Current customer stories mobile](./public/analysis/issue-3-current-mobile.png)
 
 *Caption: Current Customer Stories section on mobile — limited viewport height makes the speaker context easier to push below the fold.*
 
-![Issue 3 — Redesigned customer stories](./public/analysis/issue-3-solution.png)
+![Redesigned customer stories](./public/analysis/issue-3-solution.png)
 
 *Caption: Redesigned Customer Stories — poster-first media with customer context and story navigation kept together.*
 
@@ -238,15 +275,15 @@ On mobile, the same amount of information increases page length and pushes later
 
 The redesign keeps the journey structure but changes the interaction model.
 
-The **left section is fixed at the top**, keeping the main heading, CTA and testimonial visible as the user progresses through the journey.
+The **left section remains fixed**, keeping the main heading, CTA and testimonial visible as the user progresses through the journey.
 
-The **right section becomes the scrollable timeline**. As the user scrolls, only the right-side journey content progresses through the remaining weeks and reveals all the week cards.
+The **right section becomes the scrollable timeline**. As the user scrolls, the right-side journey content progresses through the remaining weeks and reveals all the week cards.
 
 This creates a focused interaction:
 
-**Fixed context on the left → progressive journey on the right**
+> **Fixed context on the left → progressive journey on the right**
 
-The redesign also makes the five stages visually clearer:
+The five stages are also made visually clearer:
 
 1. **Start**
 2. **Week 1 — Discovery & shortlisting**
@@ -254,21 +291,21 @@ The redesign also makes the five stages visually clearer:
 4. **Week 3 — Deep dive**
 5. **Last week — Negotiation & closure**
 
-This preserves the original 25-day proposition while reducing the need for the user to navigate two independent page areas.
+This preserves the original 25-day proposition while reducing the need to navigate two separate areas.
 
 ### Images
 
-![Issue 4 — Current 25-day journey](./public/analysis/issue-4-current.png)
+![Current 25-day journey](./public/analysis/issue-4-current.png)
 
 *Caption: Current 25-day journey — the right-side timeline requires additional scrolling to reveal later weeks.*
 
-![Issue 4 — Redesigned 25-day journey](./public/analysis/issue-4-solution.png)
+![Redesigned 25-day journey](./public/analysis/issue-4-solution.png)
 
 *Caption: Redesigned 25-day journey — the left context remains fixed while the right timeline scrolls through all journey stages.*
 
-![Issue 4 — Redesigned 25-day journey mobile](./public/analysis/issue-4-solution-mobile.png)
+![Redesigned 25-day journey mobile](./public/analysis/issue-4-solution-mobile.png)
 
-*Caption: Redesigned 25-day journey on mobile — the journey is converted into a single responsive sequence while preserving the stage hierarchy.*
+*Caption: Redesigned 25-day journey on mobile — the journey is converted into a responsive sequence while preserving the stage hierarchy.*
 
 ---
 
@@ -280,9 +317,7 @@ Across the original homepage, headings, eyebrow text, descriptions, card content
 
 Different sections can therefore feel like separate visual systems rather than parts of one product experience.
 
-On desktop, the larger viewport makes these differences less restrictive, but inconsistent heading scale and supporting text still reduce visual continuity between sections.
-
-On mobile, typography becomes more important because limited width causes headings and supporting content to wrap. Inconsistent sizing and line-height can make some sections feel disproportionately dense while others feel too sparse.
+On mobile, typography becomes even more important because limited width causes headings and supporting content to wrap.
 
 ### Impact
 
@@ -297,25 +332,23 @@ This increases cognitive load and reduces the feeling of a cohesive product expe
 
 ### Solution
 
-The redesign establishes a consistent typographic system across the page:
+The redesign establishes a consistent typographic system:
 
 - Consistent eyebrow treatment
 - Consistent section heading scale
 - Controlled heading line-height
 - Consistent body text sizing
 - Clear card heading / subheading / body hierarchy
-- Responsive typography for smaller screens
+- Responsive typography
 - Consistent emphasis for important phrases and metrics
-
-The result is a clearer visual hierarchy that remains consistent from the hero through the supporting sections.
 
 ### Images
 
-![Issue 5 — Current typography](./public/analysis/issue-5-current.png)
+![Current typography](./public/analysis/issue-5-current.png)
 
 *Caption: Current homepage typography — heading and supporting-text hierarchy varies between sections.*
 
-![Issue 5 — Redesigned typography](./public/analysis/issue-5-solution.png)
+![Redesigned typography](./public/analysis/issue-5-solution.png)
 
 *Caption: Redesigned typography — consistent type hierarchy creates a more unified visual system.*
 
@@ -326,8 +359,6 @@ The result is a clearer visual hierarchy that remains consistent from the hero t
 ### Problem
 
 The original homepage uses different amounts of padding, gaps and whitespace between sections and content groups.
-
-On desktop, large screen space can make these differences less noticeable, but some sections have significantly different vertical density.
 
 On mobile, inconsistent spacing becomes more visible because every additional gap contributes directly to page length.
 
@@ -343,7 +374,7 @@ When spacing changes unpredictably, sections can feel disconnected and the page 
 
 ### Solution
 
-The redesign introduces a more systematic spacing approach:
+The redesign introduces a systematic spacing approach:
 
 - Consistent section padding
 - Consistent spacing between eyebrow, heading and description
@@ -352,61 +383,340 @@ The redesign introduces a more systematic spacing approach:
 - Controlled mobile spacing
 - Clear separation between major sections
 
-This creates a predictable vertical rhythm across the entire landing page.
+This creates a predictable vertical rhythm across the page.
 
 ### Images
 
-![Issue 6 — Current spacing](./public/analysis/issue-6-current.png)
+![Current spacing](./public/analysis/issue-6-current.png)
 
 *Caption: Current homepage spacing — section density and vertical gaps vary across the page.*
 
-![Issue 6 — Redesigned spacing](./public/analysis/issue-6-solution.png)
+![Redesigned spacing](./public/analysis/issue-6-solution.png)
 
 *Caption: Redesigned spacing — standardized section padding and content gaps create a consistent page rhythm.*
 
 ---
 
-# 3. Design Decisions Summary
+# Part 2 — Build
 
-The redesign focuses on reducing friction rather than simply removing content.
+## Assignment Scope
+
+The assignment required:
+
+- A redesigned Hero section
+- 2 additional sections from the original homepage
+- Responsive desktop and mobile design
+- Optimized images
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+### Implemented scope
+
+I redesigned the **Hero** and multiple existing sections from the original homepage rather than limiting the work to only the minimum required sections.
+
+The two sections specifically selected as the additional sections were:
+
+1. **Services**
+2. **25-Day Guided Home Buying**
+
+I also extended the redesign to other existing sections to maintain a consistent visual system across the full landing page.
+
+### Main redesigned sections
+
+| Section | Treatment |
+|---|---|
+| **Hero** | Redesigned value proposition, CTA and trust hierarchy |
+| **Services** | Redesigned service cards and responsive layout |
+| **Property Intelligence / Reality** | Reorganized comparison and visual storytelling |
+| **Customer Stories** | Poster-first video, customer context and responsive story navigation |
+| **25-Day Guided Home Buying** | Fixed context + scrollable journey |
+| **Savings** | Redesigned content hierarchy |
+| **FAQ** | Improved information hierarchy and responsive interaction |
+| **Final CTA** | Consistent closing conversion section |
+
+---
+
+# 3. Redesigned Hero
+
+### Original approach
+
+The original hero led with a fragmented problem statement around broker sales pitches and incomplete information.
+
+### Redesigned approach
+
+The redesign leads with:
+
+> **“Make a smarter home-buying decision.”**
+
+The supporting content establishes Propsoch as an independent home-buying advisory service and gives the user a clear next action.
+
+Key changes:
+
+- Direct value proposition
+- Clear primary CTA
+- City selection
+- Trust indicators
+- Stronger heading hierarchy
+- Responsive desktop/mobile layout
+- Reduced cognitive load
+
+---
+
+# 4. Services Section
+
+The Services section organizes the existing Propsoch offerings into a more structured and scannable presentation.
+
+The redesign focuses on:
+
+- Clear service categories
+- Consistent card hierarchy
+- Stronger spacing
+- Responsive card layout
+- Consistent typography
+- Clear interaction affordances
+
+### Responsive behavior
+
+On desktop, services use a structured grid.
+
+On mobile, the layout adapts to a single-column/stacked presentation so each service remains readable without forcing horizontal scrolling.
+
+![Services desktop](./public/analysis/services-desktop.png)
+
+*Caption: Redesigned Services section on desktop.*
+
+![Services mobile](./public/analysis/services-mobile.png)
+
+*Caption: Redesigned Services section on mobile.*
+
+---
+
+# 5. 25-Day Guided Home Buying
+
+The original 25-day journey was redesigned as an interaction rather than simply restyling the existing timeline.
+
+### Desktop
+
+The left information panel remains fixed while the right-side journey progresses through the stages.
+
+This allows the user to keep the main context visible while exploring the full process.
+
+### Mobile
+
+The desktop interaction is converted into a responsive sequence so the journey remains readable and usable on a narrow viewport.
+
+![25-day journey desktop](./public/analysis/issue-4-solution.png)
+
+*Caption: Redesigned 25-day journey on desktop — fixed context with a progressive scrollable timeline.*
+
+![25-day journey mobile](./public/analysis/issue-4-solution-mobile.png)
+
+*Caption: Redesigned 25-day journey on mobile — responsive sequential presentation of all stages.*
+
+---
+
+# 6. Customer Stories
+
+The Customer Stories section was redesigned around context-first interaction.
+
+### Original
+
+- Video-led presentation
+- Customer context could be separated from the media
+- Auto-play behavior
+
+### Redesign
+
+- Static poster shown initially
+- User initiates playback
+- Customer name, location, role and quote remain visible
+- Story selector makes other stories discoverable
+- Desktop and mobile layouts are structured independently
+
+![Customer Stories desktop](./public/analysis/issue-3-solution.png)
+
+*Caption: Redesigned Customer Stories on desktop — customer context and media are presented together.*
+
+![Customer Stories mobile](./public/analysis/issue-3-current-mobile.png)
+
+*Caption: Customer Stories responsive presentation on mobile.*
+
+---
+
+# 7. Responsive Design
+
+The page was designed for both desktop and mobile rather than treating mobile as a smaller desktop layout.
+
+### Desktop considerations
+
+- Multi-column layouts where appropriate
+- Fixed contextual panels
+- Larger visual hierarchy
+- Structured card grids
+- Wider media presentation
+
+### Mobile considerations
+
+- Single-column content flow
+- Responsive typography
+- Reduced horizontal density
+- Touch-friendly interactions
+- Stacked cards
+- Responsive story navigation
+- Mobile-specific timeline behavior
+
+![Responsive desktop overview](./public/analysis/redesign-desktop.png)
+
+*Caption: Redesigned landing page — desktop responsive layout.*
+
+![Responsive mobile overview](./public/analysis/redesign-mobile.png)
+
+*Caption: Redesigned landing page — mobile responsive layout.*
+
+---
+
+# 8. Image and Media Optimization
+
+The redesign uses performance-conscious media handling:
+
+- Responsive image sizing
+- Next.js image optimization where applicable
+- Explicit image dimensions
+- Reduced unnecessary media loading
+- Poster-first video presentation
+- User-initiated video playback
+- Avoiding unnecessary media work before interaction
+
+The goal was to preserve the visual quality of the landing page without treating every media asset as immediately required.
+
+---
+
+# Part 3 — Final Lighthouse Comparison
+
+After implementing the redesign, Lighthouse was run again against the deployed redesign.
+
+**Redesign URL:**  
+https://propsoch-landing-page-redesign.vercel.app/
+
+## Lighthouse Results
+
+| Category | Original Mobile | Redesign Mobile | Change | Original Desktop | Redesign Desktop | Change |
+|---|---:|---:|---:|---:|---:|---:|
+| **Performance** | 41 | **68** | **+27** | 91 | **97** | **+6** |
+| **Accessibility** | 84 | **95** | **+11** | 80 | **95** | **+15** |
+| **Best Practices** | 100 | **96** | -4 | 100 | **96** | -4 |
+| **SEO** | 92 | **100** | **+8** | 83 | **100** | **+17** |
+
+### Mobile — Redesigned Page
+
+![Redesign Lighthouse Mobile](./public/audit/lighthouse-redesign-mobile.png)
+
+*Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile — Performance 68, Accessibility 95, Best Practices 96 and SEO 100.*
+
+### Desktop — Redesigned Page
+
+![Redesign Lighthouse Desktop](./public/audit/lighthouse-redesign-desktop.png)
+
+*Caption: Lighthouse audit of the redesigned Propsoch homepage on desktop — Performance 97, Accessibility 95, Best Practices 96 and SEO 100.*
+
+### Results
+
+The redesign improved:
+
+- **Mobile Performance:** 41 → **68**
+- **Desktop Performance:** 91 → **97**
+- **Mobile Accessibility:** 84 → **95**
+- **Desktop Accessibility:** 80 → **95**
+- **Mobile SEO:** 92 → **100**
+- **Desktop SEO:** 83 → **100**
+
+Best Practices changed from **100 → 96** on both mobile and desktop and is reported here for completeness.
+
+The largest performance gain was on mobile, where the score increased by **27 points**.
+
+---
+
+# Design Decisions Summary
 
 | Original Experience | Redesign Approach |
 |---|---|
 | Problem-heavy hero | Direct value proposition |
-| Dense comparison table | Grouped visual comparison |
+| Dense comparison | Stronger visual grouping |
 | Video-first customer stories | Poster-first, user-initiated video |
 | Long 25-day timeline | Fixed context + scrollable journey |
 | Inconsistent typography | Unified type hierarchy |
 | Inconsistent spacing | Systematic spacing scale |
-| Media-heavy production page | Performance-aware media and asset loading |
+| Media-heavy experience | Performance-conscious media handling |
 
-The overall approach was to preserve the important information from the original Propsoch homepage while improving **hierarchy, scanability, responsive behavior, interaction clarity and perceived performance**.
+The overall approach was to preserve the important information from the original Propsoch homepage while improving:
 
----
-
-# 4. Implementation Notes
-
-The redesigned landing page was implemented using:
-
-- **Next.js**
-- **TypeScript**
-- **Tailwind CSS**
-- Responsive layouts for desktop and mobile
-- Optimized responsive images
-- User-initiated video playback
-- Reusable section and card patterns
-- Consistent typography and spacing tokens
-
-The redesign is deployed at:
-
-**https://propsoch-landing-page-redesign.vercel.app/**
+**Hierarchy → Scanability → Responsive behavior → Interaction clarity → Accessibility → Performance**
 
 ---
 
-# 5. Conclusion
+# Project Structure
 
-The redesign does not attempt to replace the information architecture of Propsoch's existing homepage. Instead, it reorganizes the same core information around a clearer user journey:
+```text
+propsoch-landing-page-redesign/
+├── public/
+│   ├── audit/
+│   └── analysis/
+├── src/
+│   ├── app/
+│   └── components/
+├── README.md
+├── package.json
+├── tsconfig.json
+└── ...
+```
+
+---
+
+# Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+For a production build:
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+# Submission
+
+### Live Site
+
+https://propsoch-landing-page-redesign.vercel.app/
+
+### GitHub Repository
+
+https://github.com/vedant48/propsoch-landing-page-redesign
+
+### Technology
+
+**Next.js · TypeScript · Tailwind CSS**
+
+---
+
+# Conclusion
+
+The redesign does not attempt to replace the information architecture of Propsoch's existing homepage. Instead, it reorganizes the existing content around a clearer user journey:
 
 **Understand the value → See the difference → Build trust → Understand the process → Take action**
 
-The main design goal was to reduce cognitive load while keeping the depth of information expected from a home-buying advisory product.
+The main design goal was to reduce cognitive load while maintaining the depth of information expected from a home-buying advisory product.
+
+The implementation goes beyond the minimum two additional sections by extending the redesign across the broader landing page, while keeping the required Hero, Services and 25-Day Guided Home Buying sections clearly identifiable for evaluation.
