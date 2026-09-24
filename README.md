@@ -618,13 +618,13 @@ https://propsoch-landing-page-redesign.vercel.app/
 
 ### Mobile - Redesigned Page
 
-![Redesign Lighthouse Mobile](./public/audit/lighthouse-redesign-mobile.)
+![Redesign Lighthouse Mobile](./public/audit/lighthouse-redesign-mobile.png)
 
 *Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile - Performance 96, Accessibility 95, Best Practices 96 and SEO 100.*
 
 ### Desktop - Redesigned Page
 
-![Redesign Lighthouse Desktop](./public/audit/lighthouse-redesign-desktop.)
+![Redesign Lighthouse Desktop](./public/audit/lighthouse-redesign-desktop.png)
 
 *Caption: Lighthouse audit of the redesigned Propsoch homepage on desktop - Performance 97, Accessibility 95, Best Practices 96 and SEO 100.*
 
