@@ -611,7 +611,7 @@ https://propsoch-landing-page-redesign.vercel.app/
 
 | Category | Original Mobile | Redesign Mobile | Change | Original Desktop | Redesign Desktop | Change |
 |---|---:|---:|---:|---:|---:|---:|
-| **Performance** | 41 | **68** | **+27** | 91 | **97** | **+6** |
+| **Performance** | 41 | **96** | **+55** | 91 | **97** | **+6** |
 | **Accessibility** | 84 | **95** | **+11** | 80 | **95** | **+15** |
 | **Best Practices** | 100 | **96** | -4 | 100 | **96** | -4 |
 | **SEO** | 92 | **100** | **+8** | 83 | **100** | **+17** |
@@ -620,7 +620,7 @@ https://propsoch-landing-page-redesign.vercel.app/
 
 ![Redesign Lighthouse Mobile](./public/audit/lighthouse-redesign-mobile.png)
 
-*Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile - Performance 68, Accessibility 95, Best Practices 96 and SEO 100.*
+*Caption: Lighthouse audit of the redesigned Propsoch homepage on mobile - Performance 96, Accessibility 95, Best Practices 96 and SEO 100.*
 
 ### Desktop - Redesigned Page
 
@@ -632,7 +632,7 @@ https://propsoch-landing-page-redesign.vercel.app/
 
 The redesign improved:
 
-- **Mobile Performance:** 41 → **68**
+- **Mobile Performance:** 41 → **96**
 - **Desktop Performance:** 91 → **97**
 - **Mobile Accessibility:** 84 → **95**
 - **Desktop Accessibility:** 80 → **95**
@@ -641,7 +641,7 @@ The redesign improved:
 
 Best Practices changed from **100 → 96** on both mobile and desktop and is reported here for completeness.
 
-The largest performance gain was on mobile, where the score increased by **27 points**.
+The largest performance gain was on mobile, where the score increased by **55 points** (from 41 to 96), driven by resolving Largest Contentful Paint (LCP) bottlenecks, preloading critical hero assets, serving WebP formats, and eliminating render-blocking delays.
 
 ---
 
