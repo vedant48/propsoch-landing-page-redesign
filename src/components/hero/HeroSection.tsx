@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button, Tabs } from '@/components/ui';
 import {
   Users,
@@ -15,20 +16,12 @@ import {
   ArrowRight,
 } from 'lucide-react';
 
-interface HeroSectionProps {
-  onOpenConsultation?: () => void;
-}
-
-export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
+export default function HeroSection() {
   const [selectedCity, setSelectedCity] = useState<'bangalore' | 'mumbai'>('bangalore');
 
   const handleConsultation = () => {
-    if (onOpenConsultation) {
-      onOpenConsultation();
-    } else {
-      const el = document.getElementById('guided-journey') || document.getElementById('consultation');
-      el?.scrollIntoView({ behavior: 'smooth' });
-    }
+    const el = document.getElementById('process-section') || document.getElementById('guided-journey') || document.getElementById('consultation');
+    el?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -56,20 +49,20 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
             </p>
 
             <div className="flex flex-col gap-2 mt-7">
-              <span className="text-label text-text-muted font-medium">
-                Select City
-              </span>
-              <Tabs
-                ariaLabel="Select City"
-                activeTab={selectedCity}
-                onChange={(city) => setSelectedCity(city as 'bangalore' | 'mumbai')}
-                tabs={[
-                  { id: 'bangalore', label: 'Bengaluru' },
-                  { id: 'mumbai', label: 'Mumbai' },
-                ]}
+                <span className="text-label text-text-muted font-medium">
+                  Select City
+                </span>
+                <Tabs
+                  ariaLabel="Select City"
+                  activeTab={selectedCity}
+                  onChange={(city) => setSelectedCity(city as 'bangalore' | 'mumbai')}
+                  tabs={[
+                    { id: 'bangalore', label: 'Bengaluru' },
+                    { id: 'mumbai', label: 'Mumbai' },
+                  ]}
                 tabClassName="px-7 py-2"
-              />
-            </div>
+                />
+              </div>
 
             <div className="flex flex-col mt-6">
               <div>
@@ -84,15 +77,15 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
                 </Button>
               </div>
               <p className="mt-3.5 text-caption text-text-secondary">
-                Already a member?{' '}
-                <Link
-                  href="/verify"
-                  className="text-primary text-link hover:underline underline-offset-2"
-                >
-                  Login
-                </Link>
-              </p>
-            </div>
+                  Already a member?{' '}
+                  <Link
+                    href="/verify"
+                    className="text-primary text-link hover:underline underline-offset-2"
+                  >
+                    Login
+                  </Link>
+                </p>
+              </div>
 
             <div className="hidden lg:flex items-center gap-7 xl:gap-8 mt-2 pt-4 border-t border-border-main">
               <div className="flex items-center gap-2.5">
@@ -135,12 +128,13 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
               />
 
               <div className="relative z-10 w-[84%] sm:w-[74%] max-w-[390px] pt-1 sm:pt-4 translate-x-3 sm:translate-x-0">
-                <img
+                <Image
                   src="/hero-character.png"
                   alt="Propsoch client making smarter home decisions"
+                  width={880}
+                  height={729}
+                  priority
                   className="w-full h-auto object-contain select-none drop-shadow-md [mask-image:linear-gradient(to_bottom,black_74%,transparent_98%)]"
-                  loading="eager"
-                  decoding="async"
                 />
               </div>
 

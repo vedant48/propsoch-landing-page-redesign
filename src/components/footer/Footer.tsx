@@ -77,7 +77,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
   return (
     <footer className="bg-surface-darker text-white pt-10 sm:pt-12 pb-8 overflow-hidden relative border-t border-white/10" aria-label="Footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="flex w-full flex-col items-center justify-center rounded-xl px-6 sm:px-8 py-6 sm:py-7 text-center lg:flex-row lg:justify-between lg:gap-8 lg:px-12 lg:text-left bg-white/5 border border-primary/40 shadow-card mb-8 sm:mb-10">
           <img
             src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/bromatkar_home_page/mobile/spectacles.png?w=1920"
@@ -107,7 +107,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6 pb-10 border-b border-white/10">
-          
+
           <div className="lg:col-span-4 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2.5 w-fit group" aria-label="Propsoch Homepage">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center p-1.5 shadow-md shadow-primary/30 group-hover:scale-105 transition-transform">
@@ -115,9 +115,6 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
               </div>
               <span className="text-lg font-bold tracking-tight text-white flex items-center gap-1.5">
                 Propsoch
-                <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-white/10 text-primary border border-primary/30 font-medium">
-                  Concierge
-                </span>
               </span>
             </Link>
 

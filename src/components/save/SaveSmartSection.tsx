@@ -3,11 +3,7 @@
 import React from 'react';
 import { Section, Container, Button } from '@/components/ui';
 
-interface SaveSmartSectionProps {
-  onOpenConsultation?: () => void;
-}
-
-export default function SaveSmartSection({ onOpenConsultation }: SaveSmartSectionProps) {
+export default function SaveSmartSection() {
   const features = [
     {
       title: 'Work with trained architects',
@@ -164,7 +160,9 @@ export default function SaveSmartSection({ onOpenConsultation }: SaveSmartSectio
                     <Button
                       variant="primary"
                       size="md"
-                      onClick={onOpenConsultation}
+                      onClick={() => {
+                        document.getElementById('process-section')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
                       className="w-full sm:flex-1"
                     >
                       Book A Free Call

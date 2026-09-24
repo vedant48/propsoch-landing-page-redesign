@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import {
   Calendar,
   Phone,
@@ -15,11 +16,7 @@ import {
 } from 'lucide-react';
 import { Section, Container, Button } from '@/components/ui';
 
-interface GuidedJourneyProps {
-  onOpenConsultation?: () => void;
-}
-
-export default function GuidedJourney25Days({ onOpenConsultation }: GuidedJourneyProps) {
+export default function GuidedJourney25Days() {
   const steps = [
     {
       number: '01',
@@ -109,7 +106,9 @@ export default function GuidedJourney25Days({ onOpenConsultation }: GuidedJourne
               <Button
                 variant="primary"
                 size="lg"
-                onClick={onOpenConsultation}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className="w-full flex items-center justify-center gap-2"
               >
                 <span>Book an appointment</span>
@@ -124,9 +123,11 @@ export default function GuidedJourney25Days({ onOpenConsultation }: GuidedJourne
                   </p>
                 </div>
                 <div className="flex items-center gap-3 mt-4 pt-3.5 border-t border-border-main">
-                  <img
+                  <Image
                     src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/testimonial/roshik-shenoy.png"
                     alt="Roshik Shenoy"
+                    width={40}
+                    height={40}
                     className="w-10 h-10 rounded-full object-cover border border-border-main shrink-0"
                   />
                   <div className="min-w-0">
@@ -221,7 +222,9 @@ export default function GuidedJourney25Days({ onOpenConsultation }: GuidedJourne
           <Button
             variant="primary"
             size="md"
-            onClick={onOpenConsultation}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
             className="shrink-0 flex items-center justify-center gap-2 relative z-10"
           >
             <span>Book an appointment</span>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Section, Container } from '@/components/ui';
 
 export default function MediaCoverage() {
@@ -9,14 +10,18 @@ export default function MediaCoverage() {
       <Container>
         <div className="relative flex h-[210px] w-full overflow-hidden rounded-2xl bg-surface-white border border-border-main">
           <div className="relative h-full w-[60%] shrink-0 overflow-hidden" aria-hidden="true">
-            <img
+            <Image
               src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/bromatkar_home_page/desktop/company_banner_1_web.png?w=1920"
               alt="Media banner 1"
+              width={560}
+              height={70}
               className="absolute top-0 left-0 h-auto w-[90%] select-none object-contain object-left pointer-events-none"
             />
-            <img
+            <Image
               src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/bromatkar_home_page/desktop/company_banner_2_web.png?w=1920"
               alt="Media banner 2"
+              width={600}
+              height={70}
               className="absolute top-[36%] left-0 h-auto w-[100%] select-none object-contain object-left pointer-events-none"
             />
             <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-48 bg-linear-to-r from-transparent to-surface-white" />

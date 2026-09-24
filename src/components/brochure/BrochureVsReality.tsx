@@ -1,14 +1,11 @@
 'use client';
 
 import React, { useState, useRef, useCallback } from 'react';
+import Image from 'next/image';
 import { Ban, CheckCircle2, ArrowRight, Search } from 'lucide-react';
 import { Section, Container } from '@/components/ui';
 
-interface BrochureVsRealityProps {
-  onOpenConsultation?: () => void;
-}
-
-export default function BrochureVsReality({ onOpenConsultation }: BrochureVsRealityProps) {
+export default function BrochureVsReality() {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -71,10 +68,12 @@ export default function BrochureVsReality({ onOpenConsultation }: BrochureVsReal
                   className="absolute inset-0 h-full w-full pointer-events-none transition-none"
                   style={{ clipPath: `inset(0px ${100 - sliderPosition}% 0px 0px)` }}
                 >
-                  <img
+                  <Image
                     src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/product-page/pom-master-plan-before.png?w=1920"
                     alt="Broker Brochure Master Plan View"
-                    className="h-full w-full object-cover rounded-lg"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 600px"
+                    className="object-cover rounded-lg"
                   />
                 </div>
 
@@ -82,10 +81,12 @@ export default function BrochureVsReality({ onOpenConsultation }: BrochureVsReal
                   className="absolute inset-0 h-full w-full pointer-events-none transition-none"
                   style={{ clipPath: `inset(0px 0px 0px ${sliderPosition}%)` }}
                 >
-                  <img
+                  <Image
                     src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/product-page/pom-master-plan-after.png?w=1920"
                     alt="Propsoch Technical Reality Master Plan with annotations"
-                    className="h-full w-full object-cover rounded-lg"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 600px"
+                    className="object-cover rounded-lg"
                   />
                 </div>
 
@@ -153,7 +154,9 @@ export default function BrochureVsReality({ onOpenConsultation }: BrochureVsReal
               <div className="mt-6">
                 <button
                   type="button"
-                  onClick={onOpenConsultation}
+                  onClick={() => {
+                    document.getElementById('process-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="inline-flex items-center gap-2 text-primary hover:text-primary-hover font-bold text-btn transition-colors group cursor-pointer text-left"
                 >
                   <span>Request a floorplan audit for your shortlisted home</span>

@@ -4,9 +4,6 @@ import React, { useState, useMemo } from 'react';
 import { Search, ChevronDown, Check, Copy, ThumbsUp, ThumbsDown, X } from 'lucide-react';
 import { Section, Container, Button, Tabs } from '@/components/ui';
 
-interface FaqSectionProps {
-  onOpenConsultation?: () => void;
-}
 
 interface FaqItem {
   id: string;
@@ -136,7 +133,7 @@ On legal matters, we have tied up with lawyers who bring many years of experienc
 
 const categories = ['All', 'About the Service', 'Fees', 'Why Work With Us', 'Trust'] as const;
 
-export default function FaqSection({ onOpenConsultation }: FaqSectionProps) {
+export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -174,7 +171,7 @@ export default function FaqSection({ onOpenConsultation }: FaqSectionProps) {
             Frequently Asked Questions
           </span>
           <h2 id="faq-title" className="mt-2 text-h2 font-bold text-text-main leading-tight tracking-tight">
-            99% of your queries should get answered here, for others, you can always talk to us
+            99% of your queries should get answered here, <span className="text-primary block sm:inline">for others, you can always talk to us.</span>
           </h2>
           <p className="mt-2.5 text-body-lg text-text-muted font-normal leading-relaxed">
             Transparent answers on our 25-day guided home buying process, fees, architect advisory, and developer negotiations.
@@ -242,7 +239,9 @@ export default function FaqSection({ onOpenConsultation }: FaqSectionProps) {
                 <Button
                   variant="primary"
                   size="md"
-                  onClick={onOpenConsultation}
+                  onClick={() => {
+                    document.getElementById('process-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   Talk To Us
                 </Button>

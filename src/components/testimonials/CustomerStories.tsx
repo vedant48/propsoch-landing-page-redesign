@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { Section, Container } from '@/components/ui';
 
 interface Story {
@@ -158,7 +159,7 @@ export default function CustomerStories() {
                 CUSTOMER STORIES
               </span>
               <h2 className="mt-2 text-h2 font-bold text-text-main leading-tight tracking-tight">
-                Real stories from people who&apos;ve been there, bought that.
+                Real stories from people <span className="text-primary block sm:inline">who&apos;ve been there, bought that.</span>
               </h2>
               <p className="mt-2.5 text-body-lg text-text-muted font-normal leading-relaxed">
                 From complex market comparisons to finding verified, zero-compromise homes - our advisory helps buyers make confident decisions with 100% peace of mind.
@@ -200,10 +201,12 @@ export default function CustomerStories() {
                       className="flex-1 min-w-0 flex flex-col h-full bg-surface-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
                     >
                       <div className="relative h-[340px] w-full overflow-hidden bg-surface-white group">
-                        <img
+                        <Image
                           src={`https://img.youtube.com/vi/${story.youtubeId}/hqdefault.jpg`}
                           alt={`Customer story thumbnail for ${story.name}`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 600px"
+                          className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         />
                         <div className="absolute top-4 left-4 z-10 bg-surface-white/90 backdrop-blur-md px-3 py-1 rounded-full text-label text-text-main shadow-card">
                           {story.tag}
@@ -343,10 +346,12 @@ export default function CustomerStories() {
                     }`}
                   >
                     <div className="relative aspect-video w-full overflow-hidden bg-surface-white group">
-                      <img
+                      <Image
                         src={`https://img.youtube.com/vi/${story.youtubeId}/hqdefault.jpg`}
                         alt={`Story thumbnail for ${story.name}`}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 500px"
+                        className="object-cover"
                       />
                       <div className="absolute top-3 left-3 bg-surface-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full text-label text-text-main shadow-card">
                         {story.tag}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Section, Container } from '@/components/ui';
 
 export default function CompanyLogosMarquee() {
@@ -33,11 +34,12 @@ export default function CompanyLogosMarquee() {
           <div className="animate-marquee-infinite flex items-center gap-12 sm:gap-20 shrink-0">
             {row1.concat(row1).concat(row1).map((item, idx) => (
               <div key={`${item.name}-${idx}`} className="flex items-center justify-center h-10 w-32 shrink-0">
-                <img
+                <Image
                   src={item.src}
                   alt={item.name}
-                  className="max-h-7 max-w-[120px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
-                  loading="lazy"
+                  width={120}
+                  height={28}
+                  className="max-h-7 max-w-[120px] w-auto h-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
                 />
               </div>
             ))}
@@ -48,11 +50,12 @@ export default function CompanyLogosMarquee() {
           <div className="animate-marquee-infinite flex items-center gap-12 sm:gap-20 shrink-0" style={{ animationDirection: 'reverse' }}>
             {row2.concat(row2).concat(row2).map((item, idx) => (
               <div key={`${item.name}-${idx}`} className="flex items-center justify-center h-10 w-32 shrink-0">
-                <img
+                <Image
                   src={item.src}
                   alt={item.name}
-                  className="max-h-7 max-w-[120px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
-                  loading="lazy"
+                  width={120}
+                  height={28}
+                  className="max-h-7 max-w-[120px] w-auto h-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
                 />
               </div>
             ))}

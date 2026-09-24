@@ -67,7 +67,7 @@ export default function TrustAuthoritySection() {
     },
     {
       name: 'CNBC-TV18',
-      src: 'https://cdn.brandfetch.io/id5PkSQBPN/theme/light/logo.svg?c=1bxvppn4h2jdok13ahbac9bw5ndX-aE950d',
+      src: 'https://cdn.brandfetch.io/iddr-Ds11g/w/800/h/255/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
       tag: 'Market Intelligence',
     },
     {
@@ -105,37 +105,16 @@ export default function TrustAuthoritySection() {
       src: 'https://cdn.brandfetch.io/id8K7gF82w/theme/dark/logo.svg?c=1bxvppn4h2jdok13ahbac9bw5ndX-aE950d',
       tag: 'PropTech Media',
     },
+    {
+      name: 'Inc42',
+      src: 'https://inc42.com/wp-content/themes/inc42/img/inc42-sticky-logo.svg',
+      tag: 'PropTech Media',
+    },
   ];
 
   return (
     <Section id="trust-authority" ariaLabel="Trust and Authority" background="subtle" className="overflow-hidden">
       <Container className="space-y-8 sm:space-y-10">
-        <div className="rounded-xl bg-surface-white border border-border-main shadow-card">
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-border-main">
-            {pillars.map((pillar, idx) => {
-              const Icon = pillar.icon;
-              return (
-                <div key={idx} className="flex items-start gap-4 p-6 sm:p-8">
-                  <div className="w-11 h-11 rounded-full bg-primary-light flex items-center justify-center shrink-0 mt-0.5">
-                    <Icon className="w-5 h-5 text-primary" strokeWidth={1.75} />
-                  </div>
-                  <div className="flex flex-col min-w-0">
-                    <span className="text-eyebrow font-bold text-primary uppercase tracking-wider">
-                      {pillar.tag}
-                    </span>
-                    <span className="text-h4 font-bold text-text-main leading-snug tracking-tight mt-0.5">
-                      {pillar.subtitle}
-                    </span>
-                    <span className="text-body-sm text-text-muted mt-1">
-                      {pillar.description}
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
         <div className="space-y-6">
           <div className="text-center">
             <span className="text-eyebrow font-bold text-text-muted tracking-[0.12em] uppercase">
@@ -152,7 +131,7 @@ export default function TrustAuthoritySection() {
                 <img
                   src={item.src}
                   alt={item.name}
-                  className="max-h-7 max-w-[120px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all select-none"
+                  className="max-h-7 max-w-[120px] object-contain select-none"
                   loading="lazy"
                 />
               </div>
@@ -189,32 +168,11 @@ export default function TrustAuthoritySection() {
                         loading="lazy"
                       />
                     </div>
-                    <span className="text-body-sm font-medium text-text-muted mt-1 leading-tight truncate max-w-full">
-                      {item.tag}
-                    </span>
+
                   </div>
                 ))}
-
-                <div className="rounded-lg bg-primary-light border border-primary/20 p-3 flex flex-col items-center justify-center text-center h-20 shadow-card hover:border-primary/40 transition-colors">
-                  <span className="font-extrabold text-h3 text-primary leading-tight">
-                    100%
-                  </span>
-                  <span className="text-label font-bold text-text-main leading-tight mt-0.5">
-                    Objective Data
-                  </span>
-                </div>
               </div>
             </div>
-          </div>
-
-          <div className="border-t border-border-main mt-8 pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-            <div className="flex items-center gap-2 text-body-sm font-medium text-text-muted">
-              <CheckCircle2 className="w-4 h-4 text-success shrink-0" />
-              <span>Zero commissions from developers - 100% consumer-aligned real estate representation.</span>
-            </div>
-            <span className="text-body-sm text-text-subtle text-left sm:text-right shrink-0">
-              Updated Q2 2024 Audit Data
-            </span>
           </div>
         </div>
       </Container>

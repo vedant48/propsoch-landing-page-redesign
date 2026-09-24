@@ -1,20 +1,19 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Section, Container, Button } from '@/components/ui';
 
-interface StillQuestionsCtaProps {
-  onOpenConsultation?: () => void;
-}
-
-export default function StillQuestionsCta({ onOpenConsultation }: StillQuestionsCtaProps) {
+export default function StillQuestionsCta() {
   return (
     <Section spacing="compact" background="white" aria-labelledby="cta-questions-title">
       <Container>
         <div className="flex w-full flex-col items-center justify-center rounded-xl px-6 sm:px-8 py-6 sm:py-7 text-center lg:max-w-4xl lg:mx-auto lg:flex-row lg:justify-between lg:gap-8 lg:px-12 lg:text-left bg-gradient-to-r from-primary via-primary to-primary-hover shadow-card">
-          <img
+          <Image
             src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/bromatkar_home_page/mobile/spectacles.png?w=1920"
             alt="Propsoch Spectacles"
+            width={176}
+            height={90}
             className="h-auto w-full max-w-44 select-none drop-shadow-md"
           />
 
@@ -31,7 +30,9 @@ export default function StillQuestionsCta({ onOpenConsultation }: StillQuestions
             <Button
               variant="white"
               size="lg"
-              onClick={onOpenConsultation}
+              onClick={() => {
+                document.getElementById('process-section')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="whitespace-nowrap"
             >
               Book A Free Call

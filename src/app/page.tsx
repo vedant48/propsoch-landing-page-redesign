@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import LoadingScreen from '@/components/loading/LoadingScreen';
 import Navbar from '@/components/header/Navbar';
 import HeroSection from '@/components/hero/HeroSection';
@@ -15,19 +15,8 @@ import SaveSmartSection from '@/components/save/SaveSmartSection';
 import FaqSection from '@/components/faq/FaqSection';
 import MarketOverview from '@/components/overview/MarketOverview';
 import Footer from '@/components/footer/Footer';
-import ConsultationModal from '@/components/modal/ConsultationModal';
 
 export default function HomePage() {
-  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
-
-  const handleOpenConsultation = () => {
-    setIsConsultationModalOpen(true);
-  };
-
-  const handleCloseConsultation = () => {
-    setIsConsultationModalOpen(false);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-surface-bg text-text-main selection:bg-primary/20 selection:text-primary">
       
@@ -44,7 +33,7 @@ export default function HomePage() {
 
       <main id="main-content" className="flex-1">
         
-        <HeroSection onOpenConsultation={handleOpenConsultation} />
+        <HeroSection />
 
         <TrustAuthoritySection />
 
@@ -56,23 +45,18 @@ export default function HomePage() {
 
         <CustomerStories />
 
-        <BrochureVsReality onOpenConsultation={handleOpenConsultation} />
+        <BrochureVsReality />
 
-        <GuidedJourney25Days onOpenConsultation={handleOpenConsultation} />
+        <GuidedJourney25Days />
 
-        <SaveSmartSection onOpenConsultation={handleOpenConsultation} />
+        <SaveSmartSection />
 
-        <FaqSection onOpenConsultation={handleOpenConsultation} />
+        <FaqSection />
 
         <MarketOverview />
       </main>
 
-      <Footer onOpenConsultation={handleOpenConsultation} />
-
-      <ConsultationModal
-        isOpen={isConsultationModalOpen}
-        onClose={handleCloseConsultation}
-      />
+      <Footer />
     </div>
   );
 }
