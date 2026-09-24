@@ -1,4 +1,5 @@
 import React from 'react';
+import LoadingScreen from '@/components/loading/LoadingScreen';
 import Navbar from '@/components/header/Navbar';
 import HeroSection from '@/components/hero/HeroSection';
 import TrustAuthoritySection from '@/components/trust/TrustAuthoritySection';
@@ -16,6 +17,7 @@ import Footer from '@/components/footer/Footer';
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-surface-bg text-text-main selection:bg-primary/20 selection:text-primary">
+      <LoadingScreen />
 
       <a
         href="#main-content"
