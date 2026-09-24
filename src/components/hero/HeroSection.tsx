@@ -129,11 +129,13 @@ export default function HeroSection() {
 
               <div className="relative z-10 w-[84%] sm:w-[74%] max-w-[390px] pt-1 sm:pt-4 translate-x-3 sm:translate-x-0">
                 <Image
-                  src="/hero-character.png"
+                  src="/hero-character.webp"
                   alt="Propsoch client making smarter home decisions"
                   width={880}
                   height={729}
                   priority
+                  fetchPriority="high"
+                  sizes="(max-width: 640px) 330px, (max-width: 1024px) 390px, 440px"
                   className="w-full h-auto object-contain select-none drop-shadow-md [mask-image:linear-gradient(to_bottom,black_74%,transparent_98%)]"
                 />
               </div>

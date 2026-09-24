@@ -82,6 +82,8 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
           <img
             src="https://d1zk2x7mtoyb2b.cloudfront.net/websiteAssets/bromatkar_home_page/mobile/spectacles.png?w=1920"
             alt="Propsoch Spectacles"
+            loading="lazy"
+            decoding="async"
             className="h-auto w-full max-w-44 select-none drop-shadow-md"
           />
 
@@ -163,6 +165,8 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
                 <img
                   src="/maharera-qr.png"
                   alt="Maharashtra RERA QR Code"
+                  loading="lazy"
+                  decoding="async"
                   className="w-18 h-18 bg-white p-1 rounded-lg shrink-0 object-contain shadow-xs"
                 />
                 <div className="flex flex-col text-[10.5px] text-text-muted leading-tight">

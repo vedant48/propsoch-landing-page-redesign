@@ -42,6 +42,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${caveat.variable} scroll-smooth`}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-character.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <body className="bg-surface-bg min-h-dvh text-text-main font-sans antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
         {children}
       </body>
